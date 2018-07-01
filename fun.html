@@ -1,0 +1,74 @@
+
+<html>
+<script>
+function box(){
+		var items=document.getElementsByName('class');
+		var selectedItems="";
+		for(var i=0; i<items.length; i++){
+			if(items[i].type=='checkbox' && items[i].checked==true)
+				selectedItems+=items[i].value+"\n";
+		}
+		alert(selectedItems);
+	}
+	function validgender(ugender)
+	{
+	var ugender = document.check.gender;
+	if(gender(ugender))
+	{
+	return true;
+	}
+	return false;
+	}
+function gender(ugender)
+{
+var isChecked = false;
+for (var i = 0; i < ugender.length; i++) {  if (ugender[i].checked) {
+isChecked = true; // found one element checked  break;
+}
+}
+if(isChecked==false)
+{
+alert("Select male/female");
+}
+return isChecked; 
+}
+</script>
+<body>
+<form name="check">
+
+<input type="radio" value="male" name="gender">male
+<input type="radio" value="female" name="gender">female
+<br>
+<br>
+<p id="demo"></p>
+<input type ="checkbox" name= "class" value="c">C
+<input type="checkbox" name="class" value="c++">C++
+<input type="submit" value="Enter"  onClick="return box();">
+</form>
+<div style="background-color:red;
+width:300px;
+height:100px;
+position:relative;
+top:10px;
+left:80px;
+z-index:3">
+</div>
+<div style="background-color:yellow;
+width:300px;
+height:100px;
+position:relative;
+top:-60px;
+left:35px;
+z-index:1;">
+</div>
+<div style="background-color:green;
+width:300px;
+height:100px;
+position:relative;
+top:-220px;
+left:120px;
+z-index:2;">
+<br>
+</div>
+</body>
+</html>

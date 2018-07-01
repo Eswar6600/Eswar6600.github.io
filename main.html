@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head><title>Main Page</title>
+<style>
+ul{
+list-style-type: none;
+margin-left:100px;
+margin-top:100px;
+margin-right:100px;
+padding:0px;
+overflow:hidden;
+background-color: #404040;
+border-radius:6px;
+}
+li{
+float:left;
+border-right: 2px solid black;
+}
+li a{
+display:block;
+color:white;
+text-align: center;
+padding:12px 80px;
+text-decoration:none;
+}
+li a:hover{
+background-color: #E0E0E0;
+color:black;
+}
+.t{
+font-size:20;
+color:white;
+}
+.foo{
+margin:100px;
+padding:0px;
+margin-bottom:10px;
+border-radius:2px;
+background-color:#404040;
+color: #F5FFFA;
+}
+</style>
+<head/>
+<body background="f.jpg">
+<ul>
+  <li><a href="main.html">New Movie Entry</a></li>
+  <li><a href="film.html">Flim Crew Entry</a></li>
+  <li><a href="result.html">Result</a></li>
+  <li style="float:right"><a href="index.html">Logout</a></li>
+</ul>
+<div class="t">
+<table align="center" cellpadding="2" border="0" >
+<tr><th colspan="2"> <font size="9"><i>New Movie Entry</i></font></th></tr>
+<tr><td><br>Movie ID</td><td><br><input type="text" name="id"/></td></tr>
+<tr><td><br>Movie Name</td><td><br><input type="text" name="mname"/></td></tr>
+
+<tr><td><br>Producer</td><td><br><select name="producer">
+<option value="p1">---select---</option>
+<option value="p2">Tom cruise</option>
+</td></tr>
+
+<tr><td><br>Director</td><td><br><select name="Director">
+<option value="d1">---select---</option>
+<option value="d2">James Cameron</option></td></tr>
+
+<tr><td><br>Actor</td><td><br><select name="actor">
+<option value="a1">---select---</option>
+<option value="a2">Tom Cruise</option></td></tr>
+
+
+<tr><td><br>Actress</td><td><br><select name="actress">
+<option value="ac1">---select---</option>
+<option value="ac2">Scarlet</option></td></tr>
+
+<tr><td><br>Music Director</td><td><br><select name="mudirector">
+<option value="m1">---select---</option>
+<option value="m2">miz</option></td></tr>
+
+<tr><td><br>Writer</td><td><br><select name="writer">
+<option value="w1">---select---</option>
+<option value="w2">mariea</option></td></tr>
+
+<tr><td><br>Market Budget</td><td><br><select name="budget">
+<option value="b1">---select---</option>
+<option value="b2">20 </option></td><td><br>Crores</td></tr>
+<tr><td colspan="2" align="center"><br>Date <br><br><input type="date" name="rdate"></td></tr>
+
+<tr><td colspan="2" align="center"><br><input type="button" name="sumbit" value="Sumbit"></td></tr>
+</table>
+</div>
+<div class="foo">
+<p align="right">Movie success prediction </p>
+</div>
+</body>
+<html/>
