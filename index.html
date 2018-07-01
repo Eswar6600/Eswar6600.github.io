@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head><title>Home page</title>
+<style>
+ul{
+list-style-type: none;
+margin-left:100px;
+margin-top:100px;
+margin-right:100px;
+padding:0px;
+overflow:hidden;
+background-color: #404040;
+border-radius:6px;
+}
+li{
+float:left;
+border-right: 2px solid black;
+}
+li a{
+display:block;
+color:white;
+text-align: center;
+padding:12px 80px;
+text-decoration:none;
+}
+li a:hover{
+background-color: #E0E0E0;
+color:black;
+}
+h3{
+text-align: center;
+color:#FFBFFF;
+text-shadow: 1px 1px white;
+font-style:italic;
+font-size:40px;
+font-variant:small-caps;
+}
+
+.foo{
+margin:100px;
+padding:0px;
+margin-bottom:10px;
+border-radius:2px;
+background-color:#404040;
+color: #F5FFFA;
+}
+</style></head>
+<body background="a.jpg">
+
+<?php
+$servername ="localhost";
+$username= "root";
+$password= "";
+$conn = mysqli_connect($servername,$username,$password);
+if(!$conn)
+{
+	die("Connection failed: " . mysqli_connect_error());
+}else{
+	prompt "Connection successful";
+}
+?>
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="#about">About us</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="register.html">Register</a></li>
+  <li style="float:right"><a href="login.html">Login</a></li>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<div>
+<h3><b>Welcome to Movie Success <br>Prediction System</b></h3>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="foo">
+<p align="right">Movie success prediction </p>
+</div>
+</body>
+</html>
